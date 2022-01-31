@@ -1,0 +1,3 @@
+/home/chase/assignment-vector/build/CMakeFiles/rebuild_cache.dir
+/home/chase/assignment-vector/build/CMakeFiles/edit_cache.dir
+/home/chase/assignment-vector/build/CMakeFiles/Vector.dir

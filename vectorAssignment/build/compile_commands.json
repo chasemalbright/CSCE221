@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/chase/assignment-vector/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -pedantic -g   -std=gnu++17 -o CMakeFiles/Vector.dir/src/Datum.cpp.o -c /home/chase/assignment-vector/src/Datum.cpp",
+  "file": "/home/chase/assignment-vector/src/Datum.cpp"
+},
+{
+  "directory": "/home/chase/assignment-vector/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9     -Wall -pedantic -g   -std=gnu++17 -o CMakeFiles/Vector.dir/src/main.cpp.o -c /home/chase/assignment-vector/src/main.cpp",
+  "file": "/home/chase/assignment-vector/src/main.cpp"
+}
+]

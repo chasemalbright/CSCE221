@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chase/assignment-vector/src/Datum.cpp
+cmath
+-
+fstream
+-
+sstream
+-
+Datum.h
+/home/chase/assignment-vector/src/Datum.h
+
+/home/chase/assignment-vector/src/Datum.h
+iostream
+-
+string
+-
+fstream
+-
+sstream
+-
+Vector.h
+/home/chase/assignment-vector/src/Vector.h
+
+/home/chase/assignment-vector/src/Vector.h
+algorithm
+-
+cstddef
+-
+stdexcept
+-
+vector
+-
+
