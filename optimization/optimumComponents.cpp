@@ -9,13 +9,10 @@ struct combination {
     int r1, r2; 
     double c1, c2;
     double w, q, req;
-
-
-    bool valid = true;
 };
 
 
-void selection(std::vector<combination>& input) {
+void bubbleSort(std::vector<combination>& input) {
 
     double temp;
     for (int i = 0; i < input.size(); i ++) {
@@ -38,7 +35,7 @@ void printcombo(combination input) {
 }
 
 
-void printyboi(std::vector<combination> input) {
+void print(std::vector<combination> input) {
     for (int i = 0; i < input.size(); i++) {
         printcombo(input.at(i));
     }
@@ -131,18 +128,18 @@ int main() {
     }
 
     // implement sort of sorts 
-    selection(qp1);
-    selection(qp25);
-    selection(q1);
-    selection(q25);
-    selection(qp5);
+    bubbleSort(qp1);
+    bubbleSort(qp25);
+    bubbleSort(q1);
+    bubbleSort(q25);
+    bubbleSort(qp5);
 
 
-    printyboi(qp1);
-    printyboi(qp25);
-    printyboi(qp5);
-    printyboi(q1);
-    printyboi(q25);
+    print(qp1);
+    print(qp25);
+    print(qp5);
+    print(q1);
+    print(q25);
     
     return 0;
 }
