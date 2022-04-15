@@ -281,6 +281,8 @@ public:
             _bucket_count = other._bucket_count;
             _size = 0;
 
+
+
             _buckets = new HashNode*[other._bucket_count]();
             for (auto poin = other._head.next; poin != nullptr; poin = poin->next ){
                 insert(poin->val);
@@ -291,30 +293,29 @@ public:
     }
 
     UnorderedMap & operator=(UnorderedMap && other) {
-        if (this != &other){
-            clear();
-            delete[] _buckets;
-            _head.next = other._head.next;
-            other._head.next = nullptr;
+        clear();
+        delete[] _buckets;
+        _equal = other._equal;
+        _buckets = other._buckets;
+        _bucket_count = other._bucket_count;
+        _size = other._size;
+        _hash = other._hash;
+        _head.next = other._head.next;
 
-            _bucket_count = other._bucket_count;
-            _size = other._size;
-            
-            for (size_t i = 0; i < _bucket_count; i++){
-
-            if ( other._buckets[i] == &other._head){
-                _buckets[i] = std::move(&_head);
-            } else {
-                _buckets[i] = std::move(other._buckets[i]);
-                other._buckets[i] = nullptr;
-            }
-            other._size = 0;
-            other._bucket_count = 0;
-            
+        if (_head.next != nullptr){
+            _buckets[_bucket(other._head.next->val.first)] = &_head;
         }
 
-        }
-        return *this;
+        other._hash = Hash{};
+
+        other._equal = key_equal{};
+
+        other._size = 0;
+        
+        other._head.next = nullptr;
+        other._buckets = new HashNode *[other._bucket_count]();
+
+        
     }
 
     void clear() noexcept {
