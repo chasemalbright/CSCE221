@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chase/assignment-unordered-map/src/UnorderedMap.h
+cstddef
+-
+functional
+-
+utility
+-
+iostream
+-
+primes.h
+/home/chase/assignment-unordered-map/src/primes.h
+
+/home/chase/assignment-unordered-map/src/main.cpp
+UnorderedMap.h
+/home/chase/assignment-unordered-map/src/UnorderedMap.h
+random
+-
+limits
+-
+iostream
+-
+iomanip
+-
+algorithm
+-
+filesystem
+-
+fstream
+-
+array
+-
+
+/home/chase/assignment-unordered-map/src/primes.h
+

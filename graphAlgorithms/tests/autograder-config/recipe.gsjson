@@ -1,0 +1,13 @@
+{
+    "tests":[
+        {
+            "name":"TODO",
+            "cmds": [
+                "TODO"
+            ],
+            "points": 0,
+            "time_limit": 5000,
+            "long_name": "TODO"
+        }
+    ]
+}
